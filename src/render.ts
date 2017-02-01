@@ -110,7 +110,7 @@ export class Model {
     this.ctx = this.canvas.getContext('2d');
 
     this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
+    this.canvas.height = window.innerHeight - 50;
 
     this.viewport = new Viewport(this.canvas);
     this.targetCameraPosition = new Vec(0, 0);

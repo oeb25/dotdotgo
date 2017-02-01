@@ -8,7 +8,7 @@ import {
   Group
 } from './graphics';
 import { Model, State } from './render';
-import tegn, { init, TegnGenericElement, TegnElement } from './tegn';
+import tegn, { TegnGenericElement, TegnElement } from './tegn';
 import { questions } from './questions'
 
 const font = 'Bungee';
