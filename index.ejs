@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Editor</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Cabin|Righteous" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> -->
+    <style>
+    /*
+    font-family: 'Righteous', cursive;
+    font-family: 'Bungee', cursive;
+    font-family: 'Cabin', sans-serif;
+    */
+
+        body {
+            --red: #EB5757;
+            --blue: #2F80ED;
+            padding: 0;
+            margin: 0;
+            font-family: 'Cabin', sans-serif;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Bungee', cursive;
+        }
+
+        #app {
+            height: 100vh;
+            width: 100vw;
+            min-height: 100vh;
+            position: relative
+        }
+
+        .soft-shadow {
+            box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.2);
+        }
+
+        svg {
+            box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.2);
+            margin: 1em;
+        }
+
+        .content {
+            color: white;
+
+        }
+
+        .content > header {
+            background-color: var(--red);
+            padding: 2em;
+            color: white;
+            text-align: center;
+        }
+
+        .content > header h1 {
+            /*font-family: 'Cabin', sans-serif;*/
+        }
+
+        .content section {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .content article {
+            display: inline-block;
+            width: 45%;
+            background-color: var(--blue);
+            padding: 1em;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <div class="content">
+        <header>
+            <h2>Læs mere om hvordan du kan sikre dig selv på internettet i en af vores fantastiske artikler!</h2>        
+        </header>
+        <section>
+            <article>
+                <h1>DU ER IKKE SIKKER PÅ INTERNETTET!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+            <article>
+                <h1>DU ER IKKE SIKKER PÅ INTERNETTET!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
