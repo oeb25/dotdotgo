@@ -28,7 +28,7 @@ class Intro extends State {
       new Circle(new Vec(0, 0), 100, colors.red),
       new TextElement(
         new Vec(0, 0),
-        'Hvad fuck kender du til\nInternet sikkerhed?',
+        'Klik her for at tage quizzen.\nScroll ned for at læse mere!',
         colors.white,
         'Bungee',
         11
