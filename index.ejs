@@ -25,6 +25,16 @@
             font-family: 'Bungee', cursive;
         }
 
+        a {
+            color: #de5833;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         #app {
             width: 100vw;
             position: relative
@@ -58,11 +68,10 @@
         .content section {
             display: flex;
             justify-content: space-around;
+            flex-direction: column;
         }
 
         .content article {
-            display: inline-block;
-            width: 45%;
             background-color: var(--blue);
             padding: 1em;
             margin: 1em;
@@ -77,42 +86,88 @@
         </header>
         <section>
             <article>
-                <h1>DU ER IKKE SIKKER PÅ INTERNETTET!</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <h1 id="4-nemme-måder-du-kan-forbedre-sin-sikkerhed-på-nettet">4 nemme måder du kan forbedre sin sikkerhed på nettet!</h1>
+
+<blockquote>
+  <p>Skrevet af Anders Jensen 18/12/2016</p>
+</blockquote>
+
+
+
+<h3 id="4-vælg-den-rigtige-søgemaskine">4: Vælg den rigtige søgemaskine</h3>
+
+<p>Den søgemaskine du bruger kan have en stor effekt på hvad reklamefirmaer ved om dig. Ved at vælge den rigtige kan du undgå at personlig eller vigtig information bliver delt med reklamefirmaer.</p>
+
+<hr>
+
+
+
+<h4 id="duckduckgo"><a href="https://duckduckgo.com/">DuckDuckGO</a>.</h4>
+
+<p>Denne søgemaskine lover ikke at tracke dig. Og idet at siden er <a href="https://da.wikipedia.org/wiki/Open_source">Open Source</a> er denne påstand allerede blevet bekræftet af andre kodere. Maskinen er gratis, og man kan endda tilpasse farver og skrifttyper hvis du ikke kan lide siden oprindelige udseende! Men allervigtigst tilbyder siden også fuld kontrol over sprog og resultater. Du kan søge på dansk eller engelsk, og ved altid hvornår du gør begge.</p>
+
+<hr>
+
+
+
+<h3 id="3-vælg-den-rigtige-browser">3: Vælg den rigtige browser</h3>
+
+<p>Man skulle ikke tro det, men den browser du bruger kan have stor effekt på hvilke information du an komme til at dele. Populære browsere som Google Chrome eller Internet Explorer fortæller ofte ikke direkte at de tracker dig eller gemmer dine søgninger. Derfor kan valget af en alternativ browser være en effektiv måde at beskytte dine data.</p>
+
+
+
+<h4 id="brave"><a href="https://www.brave.com/">Brave</a></h4>
+
+<p>Brave er en gratis browser som lægger fokus på sikkerhed. Hvis nogen forsøger at sende dig reklamer eller tracke dig, blokerer Brave dem. Browseren er også hurtig, da den blokerer alle disse påtrængende <a href="https://en.wikipedia.org/wiki/Background_process">baggrundsprocesser</a>.</p>
+
+
+
+<h4 id="vivaldi"><a href="https://vivaldi.com/">Vivaldi</a></h4>
+
+<p>For dem der ønsker en mere avancerede oplevelse, kan Vivaldi være en fantastisk browser. Den er smuk, simpel og tilbyder utallige måder for brugeren at tilpasse alt fra farver til grafik. Og selvom den ikke lægger direkte fokus på sikkerhed, giver den stadig brugeren rig mulighed for at beskytte sin information.</p>
+
+<hr>
+
+
+
+<h3 id="2-hold-øje-med-links">2: Hold øje med links</h3>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikimedia_donation_page_with_extended_validation_certificate_in_firefox.png" alt="Denne boks kan ses på en sikker hjemmeside, med god sikkerhedsprotokol" title="">.</p>
+
+<p>Hjemmesider sender og modtager data på forskellige måder over computernetværk. For at beskytte og privatisere de givne data benyttes en protokol, som bestemmer hvilket ”sprog” computer-enhederne snakker med. En af de mest brugte er med protokollen <a href="https://da.wikipedia.org/wiki/Protokol_%28edb%29">HTTPS</a> (Hypertext Transfer Protocol). Denne protokol krypterer dataforbindelsen mellem en internetside og computeren, hvilket gør at data delt mellem de to, er umulig at læse for andre parter. Og det er netop her at faren ligger! <br>
+Hvis dataene ikke krypteres med en protokol som HTTPS, kan fremmede tappe ind i de sendte data og finde ud af hvad der bliver sendt frem og tilbage. Dette vil betyde at disse ubudne gæster vil kunne læse passwords, kreditkortdetaljer og alle andre oplysninger delt på hjemmesiden. Blandt andet <a href="http://imgur.com/a/dWp7S">Post Nords hjemmeside</a> bruger ikke en sikker protokol, og man skal derfor være enormt forsigtig med at dele nogen former for oplysninger derinde. <br>
+Som bruger er det muligt at beskytte dig mod dette, ved at aflæse hvordan at links og hjemmesider står fremstillet i browseren. Mange browsere som Google Chrome, Firefox og Vivaldi fortæller dig hvad for en protokol der benyttes, hvilket er repræsenteret med et lille grønt hængelås-ikon ved siden af sidens link. Ved at klikke på denne lås kan man ofte også se hvorfra at dine data bliver kommunikeret, hvis du vil vide helt præcist hvem der styrer hjemmesidens protokol. Hvis ikke HTTPS benyttes er hængelåsen rød og ulåst eller fremstå som et udråbstegn, og du burde ikke dele nogen vigtige oplysninger med den givne hjemmeside. Hvis en onlinebutik ikke benytter HTTPS kan det være farligt at bruge sit kort eller endda sin e-mailadresse, fordi man kan blive udsat svindel eller <a href="http://www.webspam.org/">spam</a></p>
+
+<hr>
+
+
+
+<h3 id="1-brug-sund-fornuft">1:   Brug sund fornuft</h3>
+
+<p>Det virker måske som en selvfølge, men det er altid vigtigt at være fornuftig og ansvarlig med sit internetforbrug. Lad være med at dele nogen former for oplysninger medmindre det er strengt nødvendigt, og hvis du bevæger der ud på en fremmede side så tjek om det er sikkert at dele dine oplysninger før du overhovedet overvejer det.</p>
+
+<blockquote>
+  <p>Indenfor internetsikkerhed er der et udtryk som bærer meget vægt. <strong>Man-in-the-Middle</strong>. Mellemmanden. Dette er et udtryk for hvordan at man aldrig kan vide om en hjemmeside eller online netværk at sikkert at bruge. Fordi hvis ikke forbindelsen er sikker, kan man aldrig vide hvem der følger med.</p>
+</blockquote>
+
+<p>Selvom hjemmesiden er sikker, ved man ikke om søgemaskinen eller internetbrowseren også er. Der er ikke kun digitale forbrydere der vil have data, men også private firmaer og reklamedistributører. Man bør derfor altid benytte et forsvarligt medie, altid holde øje, og altid være forsigtig med at dele nogle former for oplysninger.</p>
             </article>
             <article>
-                <h1>DU ER IKKE SIKKER PÅ INTERNETTET!</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <h1 id="firmaer-sender-dig-reklamer-efter-dit-personlige-forbrug">Firmaer sender dig reklamer efter dit personlige forbrug</h1>
+
+<hr>
+
+<blockquote>
+  <p>Skrievet af Michael Jensen 23/3/2017</p>
+</blockquote>
+
+
+
+<h4 id="ny-viden-afdækker-hvor-meget-firmaer-får-af-vide-om-os-gennem-de-digitale-platforme-som-vi-deler-vores-liv-med">Ny viden afdækker hvor meget firmaer får af vide om os, gennem de digitale platforme som vi deler vores liv med.</h4>
+
+<p>Det er som scenen ud af Minority Report, hvor hovedpersonen John Anderson går gennem shopping-centret, og de plastiske hologram-reklamer <a href="https://www.youtube.com/watch?v=7bXJ_obaiYQ">spørger ind til ham og siger hans navn</a>. En verden hvor den kommercielle reklame-industri ved alt om sine brugere og endda ejer deres øjne. Hvor den eneste rigtige variabel, er hvor modtagelig brugeren er overfor reklamer. <br>
+<a href="http://juliaangwin.com/wp-content/uploads/2014/02/DragnetNation-Chapter1.pdf">Ny viden</a> fortæller om hvordan firmaer betaler firmaer som Google og Facebook for at modtage information om deres brugere som du kan bruge til at målrette reklamer. Og ikke bare målrette mod en aldersgruppe eller interessegruppe, men mod de specifikke brugers behov! Ved at tracke din søgehistorik som kunne indeholde dine betalingshistorik, hvilke reklamer du kigger på længere og dine andre interesser. Både din alder og endda seksualitet eller politiske orientering kan udregnes af Google’s smarte algoritmer, ved association med dine andre aktiviteter på nettet. Du behøver ikke engang fortælle dem det! Og idet at 10 millioner af hjemmesider allerede bruger <a href="https://techcrunch.com/2012/04/12/google-analytics-officially-at-10m/">Google’s tracking software såvel som deres programmer</a>, gøres problemet kun mere komplekst. <br>
+Det er altså muligt for firmaer at identificere hvem af deres målgruppe der er allermest modtagelige overfor deres reklamekampagner og derigennem fokusere direkte på disse. Derpå udnyttes de allermest følsomme brugere, som er psykologisk uforberedte på denne form for reklamering. Det kan umiskendeligt betegnes som den allermest indgribende reklamemetode i moderne tider. Alle de personlige spørgsmål og lægeproblemer som er blevet googlet? Google kender dem alle og kan klassificere dig efter dem eller sælge den information. Og det allerværste er at man endnu ikke ved hvor dybt kaninhullet er. Dette er blot hvad er blevet afdækket, og man ved ikke reelt hvor dybt disse firmaers kløer rækker.</p>
             </article>
         </section>
     </div>
