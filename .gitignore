@@ -35,5 +35,8 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+<<<<<<< HEAD
 
 dist/
+=======
+>>>>>>> f7169d9cf1c8bfc31d0fef01918ffcac08fba0af
