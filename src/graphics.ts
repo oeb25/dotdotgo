@@ -1,62 +1,28 @@
 import { TegnElement, Renderable } from './tegn' 
 
 export class Vec {
-    data: number[]
+    x: number = 0
+    y: number = 0
 
-    constructor(...data: number[]) {
-        this.data = data
-    }
-
-    static fromArray(data): Vec {
-        const vec = new Vec()
-
-        vec.data = data
-
-        return vec
-    }
-
-    static withSize(size: number, initial: number = 0): Vec {
-        const data = []
-
-        for (let i = 0; i < size; i++) {
-            data[i] = initial
-        }
-
-        return Vec.fromArray(data)
-    }
-
-    get x() {
-        return this.data[0]
-    }
-    set x(x) {
-        this.data[0] = x
-    }
-
-    get y() {
-        return this.data[1]
-    }
-    set y(y) {
-        this.data[1] = y
-    }
-
-    apply(fn, vec) {
-        return Vec.fromArray(this.data.map((a, i) => fn(a, vec.data[i] || 0)))
+    constructor(x, y) {
+        this.x = x
+        this.y = y
     }
 
     add(vec: Vec) {
-        return this.apply((a, b) => a + b, vec)
+        return new Vec(this.x + vec.x, this.y + vec.y)
     }
 
     sub(vec: Vec) {
-        return this.apply((a, b) => a - b, vec)
+        return new Vec(this.x - vec.x, this.y - vec.y)
     }
 
     mul(scale: number) {
-        return this.apply((a, scale) => a * scale, Vec.withSize(this.data.length, scale))
+        return new Vec(this.x * scale, this.y * scale)
     }
 
     len() {
-        return Math.sqrt(this.data.reduce((a, b) => a + b * b, 0))
+        return Math.sqrt(this.x * this.x + this.y * this.y)
     }
 
     norm() {
@@ -130,11 +96,11 @@ export class Rect extends GraphicsElement {
     update(t: number) {
     }
 
-    get min(): Vec {
+    min(): Vec {
         return this.pos
     }
 
-    get max(): Vec {
+    max(): Vec {
         return this.pos.add(new Vec(this.width, this.height))
     }
 
@@ -150,10 +116,10 @@ export class Rect extends GraphicsElement {
     }
 
     intersects(b: Rect): boolean {
-        if ((this.min.x > b.max.x) ||
-            (this.max.x < b.min.x) ||
-            (this.min.y > b.max.y) ||
-            (this.max.y < b.min.y)) {
+        if ((this.min().x > b.max().x) ||
+            (this.max().x < b.min().x) ||
+            (this.min().y > b.max().y) ||
+            (this.max().y < b.min().y)) {
             return false
         }
 
